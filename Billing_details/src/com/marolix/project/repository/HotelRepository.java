@@ -46,7 +46,7 @@ public class HotelRepository {
 				double price = resultSet.getDouble("price");
 
 				// Corrected constructor call
-				Hotel product = new Hotel(id, name, price, 0);  // Assuming default quantity is 0
+				Hotel product = new Hotel(id, name, price, 0); 
 				System.out.print(product);
 				System.out.print(", Quantity: " + product.getQuantity());
 				System.out.println();
@@ -71,7 +71,7 @@ public class HotelRepository {
 				double price = resultSet.getDouble("price");
 
 				// Corrected constructor call
-				Hotel product = new Hotel(id, name, price, 0);  // Assuming default quantity is 0
+				Hotel product = new Hotel(id, name, price, 0);  
 				foodItems.add(product);
 			}
 		} catch (SQLException e) {
