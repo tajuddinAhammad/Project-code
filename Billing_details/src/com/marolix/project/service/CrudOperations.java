@@ -106,13 +106,13 @@ public class CrudOperations {
 	            try {
 	                System.out.print("Enter product ID to update: ");
 	                productId = scanner.nextInt();
-	                break;  // Exit the loop if input is valid
+	                break;  
 	            } catch (InputMismatchException e) {
 	                System.out.println("Invalid input. Please enter a valid integer.");
-	                scanner.nextLine();  // Consume the invalid input
+	                scanner.nextLine();  
 	            }
 	        }
-	        scanner.nextLine(); // Consume newline
+	        scanner.nextLine(); 
 
 	        String selectQuery = "SELECT * FROM food_items WHERE id = " + productId;
 	        ResultSet resultSet = statement.executeQuery(selectQuery);
