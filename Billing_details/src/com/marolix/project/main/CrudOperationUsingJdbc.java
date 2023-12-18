@@ -44,7 +44,7 @@ public class CrudOperationUsingJdbc {
 
                      System.out.print("Enter your choice: ");
 
-                     // Check if there is an input available and it is an integer
+                   
                      if (scanner.hasNextInt()) {
                          int choice = scanner.nextInt();
 
