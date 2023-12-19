@@ -21,11 +21,6 @@ public class CrudOperations {
 		System.out.println("Quantity: " + quantity);
 		System.out.println("Total Price: $" + totalPrice);
 	}
-
-	
-
-	
-	
 	
 	public void createProduct() {
 	    try (Scanner scanner = new Scanner(System.in)) {
@@ -37,7 +32,6 @@ public class CrudOperations {
 	        System.out.print("Enter product price: $");
 	        double productPrice = scanner.nextDouble();
 
-	        // Check if the product already exists
 	        if (isProductExists(productName)) {
 	            System.out.println("Product with the same name already exists in the database.");
 	            return;
