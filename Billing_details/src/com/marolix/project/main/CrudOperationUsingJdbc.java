@@ -76,11 +76,11 @@ public class CrudOperationUsingJdbc {
                          }
                      } else {
                          System.out.println("Invalid input. Please enter a valid option.");
-                         scanner.next(); // Consume the invalid input
+                         scanner.next(); 
                      }
                  } catch (InputMismatchException e) {
                      System.out.println("Invalid input. Please enter a valid integer.");
-                     scanner.next(); // Consume the invalid input
+                     scanner.next(); 
                  }
              }
          }
